@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Encryptor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href="styles.css">
+        <script src="myscript.js"></script>
+        <script src="https://kit.fontawesome.com/7869048bd9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section id="Encryptor">
+
+            <div class="container-input">
+                <textarea id="input-text" name="input-text" placeholder="Ingresa Texto Aqui!" rows="4" cols="50"></textarea>
+    
+                <button type="button" onclick="encrypt()">Encriptar</button>
+                <button type="button" onclick="decrypt()">Desencriptar</button>
+            </div>
+
+            <div class="container-output">
+                <textarea id="output-text" name="output-text" rows="8" cols="30" readonly>Aun no hay Resultado, Ingresa un texto!</textarea>
+                <button>
+                    <span class="fa-solid fa-copy"></span><br><span>Copiar</span>
+                </button>
+            </div>
+            
+        </section>
+       <!---
+        <section id="criptografia">
+            <h2>Criptografia</h2>
+            <p>La criptografía es la práctica de proteger la comunicación de la interferencia de terceros. Implica técnicas como el cifrado, el descifrado y la gestión de claves.</p>
+        </section>
+        --> 
+    </body>
+
+</html>

@@ -1,0 +1,91 @@
+/*
+Color Palette:
+Azul Petroleo rgb(33, 112, 116)  / #217074 
+Verde Albaca rgb(55, 116, 91)      / #37745B
+Verde Cocodrilo rgb(139, 157, 119) / #8B9D77
+Blanco Perla rgb(231, 234, 239) / #E7EAEF
+Rosa Salsa rgb(237, 197, 171) / #EDC5AB
+*/
+
+body{
+    background: #90eeaf ;
+}
+
+.container-input {
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    left: 240px;
+    top: 168px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.container-output {
+    position: absolute;
+    width: 400px;
+    height: 544px;
+    left: 900px;
+    top: 35px;
+    
+    /* White */
+    background: #9cd3c1;
+
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.753);
+    border-radius: 32px;
+}
+
+#output-text{
+    padding: 10px;
+    margin: 50px 30px;
+    font-size: 18px;
+    background-color:#e97474;
+    color:#4428e2;
+    border: none;
+    outline: none; 
+}
+
+.container-output button {
+    top: 110px;
+    left: 110px;
+    position: relative;
+    width: 180px;
+    height: 90px;
+    border-radius: 20px;
+}
+
+.container-output button span{
+    font-size: 19px;
+}
+
+.container-output button:active {
+    background: #899ce2;
+}
+
+.container-output button:before {
+    content: "Copiado";
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    background: #beccdd;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    display:none;
+}
+.container-output button:after{
+    content:"";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #b5c2d1;
+    transform: rotate(45deg);
+    display:none;
+}
