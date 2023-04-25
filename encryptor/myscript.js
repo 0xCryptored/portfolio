@@ -81,9 +81,17 @@ const output = document.getElementById('output-text');
 
   document.addEventListener('DOMContentLoaded', () => {
     const copyButton = document.querySelector('.copyButton');
+    const encriptado = document.querySelector('.encriptado');
+    const desencriptado = document.querySelector('.desencriptado');
     copyButton.onclick = () => {
       copy();
       secret();
+    }
+    encriptado.onclick = () => {
+      encrypt();
+    }
+    desencriptado.onclick = () => {
+      decrypt();
     }
   });
   

@@ -12,25 +12,23 @@ body{
 }
 header h1{
     display: inline-block;
-    width: 510px;
+    width: 340px;
     position: relative;
     margin-left: 55px;
-    font-size: 35px;
+    font-size: 45px;
     transition: color 1s;
 }
 #alert{
-    display: inline-block;
+    display: none;
     position: relative;
-    margin-left: 150px;
     top: 18px;
     width: 500px;
     height: 50px;
     border-radius: 45px;
-    font-size: 23px;
+    font-size: 30px;
     font-weight: bolder;
 }
 #alert p{
-    display: none;
     position: relative;
     left: 110px;
     bottom: 11px;
@@ -51,18 +49,22 @@ footer{
     height: 110px;
 }
 #encryptor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
 }
 /* Seccion de Input */
 .container-input {
     display:inline-block;
-    position: absolute;
-    margin: auto 3%;
+    position: relative;
+    margin: auto 1%;
     width: 45%;
     height: 500px;
     background: #B6663F;
     box-shadow: 0px 24px 32px -20px rgba(0, 0, 0, 0.753);
     border-radius: 32px;
+    left:200
 }
 #input-text{
     display: block;
@@ -113,13 +115,14 @@ footer{
 .container-output {
     display: inline-block;
     position: relative;
-    margin: auto 3%;
+    top: 73px;
+    margin: auto 1%;
     width: 45%;
-    left: 50%;
     height: 500px;
     background: #B6663F;
     box-shadow: 0px 24px 32px -20px rgba(0, 0, 0, 0.753);
     border-radius: 32px;
+    left: 90px;
 }
 #output-text{
     display: inline-block;
@@ -157,9 +160,93 @@ footer{
     left: 40px;
     align-items:center;
 }
-@media (max-width: 400px) {
-    .pet{
-        width: 150px;
-    }
+  /*=================================================================*/
+ /*== For screens with a maximum width of 767px (mobile devices) ==*/
+/*===============================================================*/
+@media only screen and (max-width: 920px) {
 
-  }
+header h1 {
+width: 100%;
+font-size: 60px;
+text-align: center;
+}
+#alert {
+display: inline-block;
+margin: 0 auto;
+width: 100%;
+height: auto;
+font-size: 40px;
+text-align: center;
+}
+#alert p {
+display: block;
+left: 75px;
+}
+footer {
+display: block;
+position: absolute;
+width: 109%;
+height: 150px;
+}
+.container-input{
+display: block;
+position: relative;
+width: 100%;
+left: 40px;
+height: auto;
+margin: 0px auto;
+}
+#input-text {
+top: 10px;
+font-size: 22px;
+margin-bottom: 20px;
+}
+.buttons {
+display: inline-block;
+position: relative;
+margin: 10px 10px;
+top: 0px;
+left: 200px;
+width: 25%;
+text-align: center;
+}
+.container-output{
+display: inline-block;
+position: relative;
+width: 100%;
+left: 40px;
+top:10px;
+height: auto;
+margin: 10px auto;
+}
+.copyButton {
+top: auto;
+bottom: 10px;
+left: 84%;
+transform: translateX(-50%);
+width: 23%;
+font-size: 18px;
+}
+#output-text {
+left: 20px;
+width: 70%;
+margin: 10px;
+font-size: 20px;
+}
+.pet {
+display: inline-block;
+width: 180px;
+top: 40px;
+right: 40px;
+}
+.credits {
+text-align: center;
+font-size: 16px;
+top: 40px;
+left: 300px;
+}
+.credits span {
+display: inline-block;
+margin-top: 10px;
+}
+}
