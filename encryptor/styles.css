@@ -8,84 +8,110 @@ Rosa Salsa rgb(237, 197, 171) / #EDC5AB
 */
 
 body{
-    background: #90eeaf ;
+    background: #64BAAD ;
 }
-
+header{
+    margin-left: 55px;
+    font-size: 20px;
+    transition: color 1s;
+}
+header:hover{
+    color: #D74250;
+    cursor: pointer;
+}
+#encryptor{
+    width: 90%;
+}
+/* Seccion de Input */
 .container-input {
+    display:inline-block;
     position: absolute;
-    width: 680px;
-    height: 288px;
-    left: 240px;
-    top: 168px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-}
+    margin: auto 3%;
+    width: 45%;
+    height: 500px;
+    background: #B6663F;
 
-.container-output {
-    position: absolute;
-    width: 400px;
-    height: 544px;
-    left: 900px;
-    top: 35px;
-    
-    /* White */
-    background: #9cd3c1;
-
-    /* shadow */
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.753);
     border-radius: 32px;
 }
-
-#output-text{
-    padding: 10px;
-    margin: 50px 30px;
-    font-size: 18px;
-    background-color:#e97474;
-    color:#4428e2;
+#input-text{
+    display: block;
+    position: relative;
+    top: 30px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    background-color:#B6663F;
+    color:#b5c95f;
+    resize: none;
     border: none;
     outline: none; 
+    
 }
-
-.container-output button {
-    top: 110px;
-    left: 110px;
+::placeholder { 
+    color: #b5c95f;
+    opacity: 1;
+  }
+.buttons{
+    display: inline-block;
     position: relative;
-    width: 180px;
-    height: 90px;
-    border-radius: 20px;
-}
-
-.container-output button span{
-    font-size: 19px;
-}
-
-.container-output button:active {
-    background: #899ce2;
-}
-
-.container-output button:before {
-    content: "Copiado";
-    position: absolute;
-    top: -50px;
-    right: 0px;
-    background: #beccdd;
-    padding: 8px 10px;
-    border-radius: 20px;
+    margin: auto 20px ;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    top: 100px;
+    left: 150px;
+    font-weight: bold;
     font-size: 15px;
-    display:none;
 }
-.container-output button:after{
-    content:"";
+.copyButton{
+    display: block;
     position: absolute;
-    top: -20px;
-    right: 25px;
-    width: 10px;
-    height: 10px;
-    background: #b5c2d1;
-    transform: rotate(45deg);
-    display:none;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    top: 87%;
+    left: 40%;
+    border-radius: 10px;
 }
+
+/* Seccion de Output */
+.container-output {
+    display: inline-block;
+    position: relative;
+    margin: auto 3%;
+    width: 45%;
+    left: 50%;
+    height: 500px;
+    background: #B6663F;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.753);
+    border-radius: 32px;
+}
+#output-text{
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    top:10px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color:#B6663F;
+    color:#b5c95f;
+    border: none;
+    outline: none; 
+    resize: none;
+}
+.pet{
+    display:inline-block;
+    position: absolute;
+    right: 9px;
+    top: 70px;
+    border-radius: 10px;
+}
+@media (max-width: 400px) {
+    .pet{
+        width: 150px;
+    }
+
+  }

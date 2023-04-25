@@ -40,15 +40,13 @@ const output = document.getElementById('output-text');
         output.value = textoDesencriptado;
   }
 
-  // Animacion de Copiado Button ============
-  let copytext = document.querySelector(".output-text");
-  copytext.querySelector("button").addEventListener("click", function(){
-    let inputO = copytext.querySelector("input.text");
-    inputO.ariaSelected()
-    document.classCommand("copy");
-    copytext.classList.add("active");
-    window.getSelection().removeAllRanges();
-    setTimeout(function(){
-      copytext.classList.remove("active");
-    },2500);
-  });
+  // BOTON DE COPIADO ============
+
+  // ANIMACION SECRETA CAPIBARA ============
+  function secret(){
+    title = "Capibara!";
+    document.getElementById('capi').innerHTML = title;
+  }
+  
+  
+

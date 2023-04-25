@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Encryptor</title>
+        <title onclick="secret()">Encryptor</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' href="styles.css">
@@ -10,29 +10,28 @@
         <script src="https://kit.fontawesome.com/7869048bd9.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <header>
+            <h1 id="capi">Cryptored Labs</h1>
+        </header>
         <section id="Encryptor">
-
             <div class="container-input">
-                <textarea id="input-text" name="input-text" placeholder="Ingresa Texto Aqui!" rows="4" cols="50"></textarea>
-    
-                <button type="button" onclick="encrypt()">Encriptar</button>
-                <button type="button" onclick="decrypt()">Desencriptar</button>
+                <textarea id="input-text" name="input-text" placeholder="Ingresa Texto Aqui!" rows="10" cols="50"></textarea>
+                <div style="display:inline-block;">
+                    <button class="buttons" type="button" onclick="encrypt()">Encriptar</button>
+                    <button class="buttons" type="button" onclick="decrypt()">Desencriptar</button>
+                </div>
             </div>
 
             <div class="container-output">
-                <textarea id="output-text" name="output-text" rows="8" cols="30" readonly>Aun no hay Resultado, Ingresa un texto!</textarea>
-                <button>
-                    <span class="fa-solid fa-copy"></span><br><span>Copiar</span>
-                </button>
+                <textarea id="output-text" name="output-text" rows="14" cols="21" readonly>Aun no hay Resultado, Ingresa un texto!</textarea>
+                <img class="pet" src="https://cdn.pixabay.com/photo/2023/04/25/00/07/00-07-51-295_1280.jpg" width="260px">
+                <div>
+                    <button class="copyButton">
+                        <span class="fa-solid fa-copy"></span><span style="margin-left:8px;">Copiar</span>
+                    </button>
+                </div>
             </div>
-            
         </section>
-       <!---
-        <section id="criptografia">
-            <h2>Criptografia</h2>
-            <p>La criptografía es la práctica de proteger la comunicación de la interferencia de terceros. Implica técnicas como el cifrado, el descifrado y la gestión de claves.</p>
-        </section>
-        --> 
     </body>
 
 </html>
